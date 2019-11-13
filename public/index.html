@@ -21,6 +21,9 @@
       if (navigator.userAgent.indexof("Windows") === -1) {
         const dimensionValue = "UA-152087264-1";
         ga("set", "dimension1", dimensionValue);
+      } else {
+        var dimensionValue = "UA-152087264-1";
+        ga("set", "dimension2", dimensionValue);
       }
     </script>
   </head>
