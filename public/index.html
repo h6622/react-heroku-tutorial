@@ -19,8 +19,12 @@
 
       gtag("config", "UA-152087264-1");
 
+      ga("create", "UA-152087264-1", "auto");
+
       const dimensionValue = navigator.userAgent;
       ga("set", "dimension1", dimensionValue);
+
+      ga("send", "pageview");
     </script>
   </head>
   <body>
