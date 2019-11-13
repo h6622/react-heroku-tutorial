@@ -21,10 +21,12 @@
 
       ga("create", "UA-152087264-1", "auto");
 
-      const dimensionValue = navigator.userAgent;
-      ga("set", "dimension1", dimensionValue);
+      ga("send", "pageview", {
+        dimension1: "<?=$ip;?>"
+      });
 
-      ga("send", "pageview");
+      // const dimensionValue = navigator.userAgent;
+      // ga("set", "dimension1", dimensionValue);
     </script>
   </head>
   <body>
